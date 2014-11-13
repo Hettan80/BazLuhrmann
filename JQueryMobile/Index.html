@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+</head>
+<body>
+
+    <!-- **************** Page One ****************** -->
+    <div data-role="page" id="pageone" data-theme="b">
+        <div data-role="header" data-position="fixed">
+            <a href="#overlayPanel" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Menu</a>
+            <h1>BAZ LUHRMANN</h1>
+        </div>
+        <div data-role="panel" id="overlayPanel" data-display="overlay" data-position-fixed="true">
+            <h2>Menu</h2>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#pageone">Intro</a></li>
+                <li><a href="#pagetwo">Personal Life</a></li>
+                <li><a href="#pagethree">Films</a></li>
+            </ul>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <h2>Intro</h2>
+            <img src="http://ia.media-imdb.com/images/M/MV5BMTc3NTY1MzA0M15BMl5BanBnXkFtZTYwMTc0ODk0._V1_SY317_CR7,0,214,317_AL_.jpg" /><br/>
+            <p>Mark Anthony "Baz" Luhrmann (/ˈbæz ˈlʊərmən/; born 17 September 1962) is an Australian film director, screenwriter and producer best known for The Red Curtain Trilogy, comprising his films Strictly Ballroom, Romeo + Juliet, and Moulin Rouge!. In 2008, his film Australia was released, starring Hugh Jackman and Nicole Kidman. His version of The Great Gatsby was released in 2013.</p>
+            <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all" data-position-to="window" data-transition="slidedown">Another photo of Baz Luhrmann</a>
+            
+            <!--Popup-->
+            <div data-role="popup" id="myPopup" class="ui-content">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-left">Close</a>
+                <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Baz_Luhrmann.jpg/220px-Baz_Luhrmann.jpg" />
+                <h3>Baz Luhrmann</h3>               
+            </div>
+        </div>
+        <div data-role="footer" style="text-align:center">
+            <a href="http://www.imdb.com/?ref_=nv_home" class="ui-btn ui-corner-all ui-shadow ui-icon-heart ui-btn-icon-left" target="blank">Read more on IMDB</a>         
+        </div>
+    </div>
+    
+    <!-- **************** Page Two ****************** -->
+    <div data-role="page" id="pagetwo" data-theme="b">
+        <div data-role="header" data-position="fixed">
+            <a href="#overlayPanel2" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Menu</a>
+            <h1>BAZ LUHRMANN</h1>
+        </div>
+        <div data-role="panel" id="overlayPanel2" data-display="overlay" data-position-fixed="true">
+            <h2>Menu</h2>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#pageone">Intro</a></li>
+                <li><a href="#pagetwo">Personal Life</a></li>
+                <li><a href="#pagethree">Films</a></li>
+            </ul>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <h2>Personal Life</h2>
+            <img src="http://ia.media-imdb.com/images/M/MV5BMjEyNDA0MzkxMF5BMl5BanBnXkFtZTcwMTk0MDc0OQ@@._V1_SY99_CR19,0,99,99_AL_.jpg" /><br />
+            <p>Luhrmann was born in Sydney. His mother, Barbara Carmel (née Brennan), was a ballroom dance teacher and dress shop owner, and his father, Leonard Luhrmann, was a farmer.[4][5][6] He was raised in Herons Creek, a tiny rural settlement in northern New South Wales where his father ran a petrol station and a movie theatre. He attended St Joseph's Hasting Regional School, Port Macquarie (1975–1978) and at St Paul's College, Manly, performing in the school's version of Shakespeare's Henry IV, Part 1.</p>
+            <p>Luhrmann officially changed his given name from Mark to Baz sometime around 1979.[7] Luhrmann then first auditioned for the National Institute of Dramatic Art (NIDA) in 1980 but was not accepted. He successfully auditioned again two years later, starting the three-year acting course in 1983. He graduated from NIDA in 1985, alongside Sonia Todd, Catherine McClements and Justin Monjo.[8] On 26 January 1997, he wedded Catherine Martin, a production designer; the couple have two children.</p>
+        </div>
+
+        <div data-role="footer" style="text-align:center">
+            <a href="http://www.imdb.com/?ref_=nv_home" class="ui-btn ui-corner-all ui-shadow ui-icon-heart ui-btn-icon-left" target="blank">Read more on IMDB</a>         
+        </div>
+    </div>
+    
+    <!--Page Three-->
+    <div data-role="page" id="pagethree" data-theme="b">
+        <div data-role="header" data-position="fixed">
+            <a href="#overlayPanel3" class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-left">Menu</a>
+            <h1>BAZ LUHRMANN</h1>
+        </div>
+        <div data-role="panel" id="overlayPanel3" data-display="overlay" data-position-fixed="true">
+            <h2>Menu</h2>
+            <ul data-role="listview" data-inset="true">
+                <li><a href="#pageone">Intro</a></li>
+                <li><a href="#pagetwo">Personal Life</a></li>
+                <li><a href="#pagethree">Films</a></li>
+            </ul>
+        </div>
+        <div data-role="main" class="ui-content">
+            <h2>Films</h2>
+            <div data-role="collapsibleset">
+                <div data-role="collapsible">
+                    <h3>Strictly Ballroom (1992)</h3>
+                    <img src="http://upload.wikimedia.org/wikipedia/en/thumb/0/04/StrictlyBallroom.jpg/220px-StrictlyBallroom.jpg" />
+                    <br />
+                    <a href="http://en.wikipedia.org/wiki/Strictly_Ballroom" target="_blank">More info</a>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Romeo + Juliet (1996)</h3>
+                    <img src="http://upload.wikimedia.org/wikipedia/en/thumb/b/b4/William_shakespeares_romeo_and_juliet_movie_poster.jpg/220px-William_shakespeares_romeo_and_juliet_movie_poster.jpg" />
+                    <br />
+                    <a href="http://en.wikipedia.org/wiki/Romeo_%2B_Juliet" target="_blank">More info</a>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Moulin Rouge! (2001)</h3>
+                    <img src="http://upload.wikimedia.org/wikipedia/en/thumb/9/9f/Moulin_rouge_poster.jpg/215px-Moulin_rouge_poster.jpg" />
+                    <br />
+                    <a href="http://en.wikipedia.org/wiki/Moulin_Rouge!" target="_blank">More info</a>
+                </div>
+                <div data-role="collapsible">
+                    <h3>Australia (2008)</h3>
+                    <img src="http://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Australia_ver4.jpg/220px-Australia_ver4.jpg" />
+                    <br />
+                    <a href="http://en.wikipedia.org/wiki/Australia_(2008_film)" target="_blank">More info</a>
+                </div>
+                <div data-role="collapsible">
+                    <h3>The Great Gatsby (2013)</h3>
+                    <img src="http://upload.wikimedia.org/wikipedia/en/thumb/2/26/TheGreatGatsby2012Poster.jpg/220px-TheGreatGatsby2012Poster.jpg" />
+                    <br/>
+                    <a href="http://en.wikipedia.org/wiki/The_Great_Gatsby_(2013_film)" target="_blank">More info</a>
+                </div>
+            </div>
+        </div>
+        <div data-role="footer" style="text-align:center">
+            <a href="http://www.imdb.com/?ref_=nv_home" class="ui-btn ui-corner-all ui-shadow ui-icon-heart ui-btn-icon-left" target="blank">Read more on IMDB</a>         
+        </div>
+    </div>
+</body>
+</html>
